@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop in array</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #55efc4, #6c5ce7);
+      }
+      h1 {
+        text-align: center;
+      }
+
+      #colorCount {
+        text-align: center;
+        background: white;
+        width: 100px;
+        margin: auto;
+        padding: 10px;
+      }
+      .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        overflow: hidden;
+      }
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 1px 10px rgb(255, 193, 193);
+        cursor: pointer;
+        background-color: gray;
+        color: white;
+        transition: 0.4s;
+      }
+      #leftBtn {
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BAKCGROUND COLOR</h1>
+    <h3 id="colorCount">Default</h3>
+
+    <div class="middle">
+      <button onclick="chngColor()" id="leftBtn">Background color</button>
+      <button onclick="chngColor()" id="rightBtn">Background color</button>
+    </div>
+
+    <script src="custom.js"></script>
+  </body>
+</html>
